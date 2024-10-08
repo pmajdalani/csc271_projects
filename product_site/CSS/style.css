@@ -57,9 +57,9 @@ body {
 nav {
     background-color: #705f59;
     padding: 10px;
-    border-radius: 30px; /* Rounded corners for pill shape */
-    width: 80%; /* Reduced width for more focus */
-    margin: 20px auto; /* Center the nav */
+    border-radius: 30px;
+    width: 80%; 
+    margin: 20px auto; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Floating effect with shadow */
 }
 
@@ -86,14 +86,14 @@ nav ul li a {
     font-size: 1.1em;
     display: inline-block;
     padding: 10px 20px;
-    border-radius: 50px; /* Rounded background for each nav item */
+    border-radius: 50px;
     background-color: transparent;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #f36527; /* Circular highlight on hover */
-    color: white; /* Keeps the text white */
+    background-color: #f36527; 
+    color: white; 
 }
 
 /* About section */
