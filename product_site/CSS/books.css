@@ -98,64 +98,42 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Fun zigzag design for the horizontal lines */
+/* Fun designs for the horizontal lines */
 hr {
     border: 0;
     height: 10px;
-    background: repeating-linear-gradient(
-        135deg,
-        #f36527,
-        #f36527 10px,
-        #705f59 10px,
-        #705f59 20px
-    );
-    background-size: 20px 20px;
+    background: linear-gradient(to right, #f36527 0%, #705f59 50%, #f36527 100%);
+    border-radius: 5px;
+    margin: 40px auto;
     width: 100vw;
-    margin: 0;
-    border-radius: 0;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
-/* Pillow Cover and Dancing Pickle sections */
-.pillow-cover, .dancing-pickle {
+/* Memory Mints and Tiny Violin sections */
+.walmart-atlas, .uselessinfo-book {
     text-align: center;
     margin: 40px;
 }
 
-.pillow-cover h2, .dancing-pickle h2 {
+.walmart-atlas h2, .uselessinfo-book h2 {
     font-size: 2em;
     color: #f36527;
     margin-bottom: 20px;
 }
 
 /* Fun borders for product images */
-.pillow-cover img, .dancing-pickle img {
+.walmart-atlas img, .uselessinfo-book img {
     border: 5px dashed #705f59;
     border-radius: 15px;
     padding: 10px;
     transition: transform 0.3s ease;
 }
 
-.pillow-cover img:hover, .dancing-pickle img:hover {
+.walmart-atlas img:hover, .uselessinfo-book img:hover {
     transform: rotate(5deg) scale(1.05);
 }
 
-.pillow-cover a, .dancing-pickle a {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #f36527;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
 /* Links for the Amazon products */
-.pillow-cover a, .dancing-pickle a {
+.walmart-atlas a, .uselessinfo-book a {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
@@ -167,7 +145,7 @@ hr {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.pillow-cover a:hover, .dancing-pickle a:hover {
+.walmart-atlas a:hover, .uselessinfo-book a:hover {
     background-color: #705f59;
     transform: translateY(-5px);
 }
@@ -196,7 +174,7 @@ footer a:hover {
 
 /* Mobile styles */
 @media (max-width: 768px) {
-    .page-title img, .pillow-cover img, .dancing-pickle img {
+    .page-title img, .memory-mints img, .tiny-violin img {
         width: 100%;
         height: auto;
     }
@@ -205,7 +183,7 @@ footer a:hover {
         width: 95%;
     }
 
-    .pillow-cover, .dancing-pickle {
+    .memory-mints, .tiny-violin {
         margin: 20px;
     }
 }
