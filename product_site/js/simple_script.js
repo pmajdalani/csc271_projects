@@ -1,3 +1,5 @@
+// This is the script of modularized code, split into separate functions for product_site_v8
+
 // Array to store poll options and values
 const poll_options = [
     {name: "Memory Mints,", votes: 0},
