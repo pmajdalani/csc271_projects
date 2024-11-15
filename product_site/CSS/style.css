@@ -177,6 +177,97 @@ footer p {
     margin: 0;
 }
 
+.popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f36527;
+    color: white;
+    padding: 15px 20px;
+    border-top: 2px solid #705f59;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideInUp 0.5s ease-out;
+}
+
+
+
+.popup p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.popup .newsletter-form {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.popup input[type="email"] {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.popup button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #705f59;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.popup button:hover {
+    background-color: white;
+    color: #705f59;
+}
+
+.close-popup {
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .popup {
+        flex-wrap: wrap;
+    }
+
+    .popup .newsletter-form {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .popup input[type="email"],
+    .popup button {
+        width: 100%;
+    }
+}
+
 /* General link hover effects */
 a {
     transition: color 0.3s;
