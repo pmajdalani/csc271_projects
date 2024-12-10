@@ -252,21 +252,7 @@ footer p {
     }
 }
 
-@media (max-width: 480px) {
-    .popup {
-        flex-wrap: wrap;
-    }
 
-    .popup .newsletter-form {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .popup input[type="email"],
-    .popup button {
-        width: 100%;
-    }
-}
 
 /* General link hover effects */
 a {
@@ -277,23 +263,53 @@ a:hover {
     color: #f36527;
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation vertically */
+        align-items: center;
+    }
+
     .welcome-message img {
-        width: 100%;
+        width: 100%; /* Scale images to fit smaller screens */
         height: auto;
     }
 
-    nav {
-        width: 95%; /* Makes nav bar fit better on smaller screens */
+    .rotating-row {
+        flex-wrap: wrap; /* Allow rows to wrap on smaller devices */
+        justify-content: center;
     }
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    h1, h2, p {
+        text-align: center;
+        padding: 10px;
     }
 
-    .about, .video {
-        margin: 10px;
+    iframe {
+        width: 100%; /* Make videos responsive */
+        height: auto;
+    }
+}
+
+/* For devices with a width of 480px or smaller */
+@media (max-width: 480px) {
+    nav ul li a {
+        padding: 10px; /* Reduce padding for smaller devices */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .about p {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .video p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px; /* Scale down header sizes */
+    }
+
+    h2 {
+        font-size: 20px;
     }
 }
