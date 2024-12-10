@@ -233,18 +233,53 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
-    .page-title img, .memory-mints img, .tiny-violin img {
-        width: 100%;
+    nav ul {
+        flex-direction: column; /* Stack navigation vertically */
+        align-items: center;
+    }
+
+    .welcome-message img {
+        width: 100%; /* Scale images to fit smaller screens */
         height: auto;
     }
 
-    nav {
-        width: 95%;
+    .rotating-row {
+        flex-wrap: wrap; /* Allow rows to wrap on smaller devices */
+        justify-content: center;
     }
 
-    .memory-mints, .tiny-violin {
-        margin: 20px;
+    h1, h2, p {
+        text-align: center;
+        padding: 10px;
+    }
+
+    iframe {
+        width: 100%; /* Make videos responsive */
+        height: auto;
+    }
+}
+
+/* For devices with a width of 480px or smaller */
+@media (max-width: 480px) {
+    nav ul li a {
+        padding: 10px; /* Reduce padding for smaller devices */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .about p {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .video p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px; /* Scale down header sizes */
+    }
+
+    h2 {
+        font-size: 20px;
     }
 }
